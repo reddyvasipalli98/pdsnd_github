@@ -5,7 +5,7 @@ Feb 26 2020
 Bike share Data Analysis
 
 ### Description
-Performed data analysis on bikeshre data in various cities in USA
+Performed data analysis on bikeshre data in various cities in USA like chicago, newyork and washington
 
 ### Files used
 chicago.csv, new_york.csv, washington.csv
