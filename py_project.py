@@ -32,7 +32,6 @@ def load_data(city):
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.dayofweek
     df['hour'] = df['Start Time'].dt.hour
-
     return df
 
 def popular_traveltimes(df):
@@ -44,7 +43,7 @@ def popular_traveltimes(df):
 
 def popular_stations(df):
     print('#2 Popular stations and trip \n')
-    print('The most popular start station is : ', df['Start Station'].mode()[0])
+    print('The most popular start station is : {}'.format(df['Start Station'].mode()[0]))
     print('The most popular end station is : ', df['End Station'].mode()[0])
     df['route map'] = df['Start Station'] + " " + df['End Station']
     print('The most popular combination of start and end point is : ', df['route map'].mode()[0])
@@ -77,7 +76,6 @@ def raw_data(df):
         if answer.lower() == 'yes':
             print(df[data : data+5])
             data += 5
-
         else:
             break
 
