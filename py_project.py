@@ -32,7 +32,6 @@ def load_data(city):
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.dayofweek
     df['hour'] = df['Start Time'].dt.hour
-
     return df
 
 def popular_traveltimes(df):
@@ -77,7 +76,6 @@ def raw_data(df):
         if answer.lower() == 'yes':
             print(df[data : data+5])
             data += 5
-
         else:
             break
 
